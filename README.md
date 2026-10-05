@@ -22,6 +22,17 @@ Todo el texto en pantalla está en español rioplatense.
 
 ![Un cuadro por beat](docs/media/hoja-por-beat.jpg)
 
+## Documentación
+
+- [`docs/PROCESO.md`](docs/PROCESO.md): **cómo se generó**. Equipos de agentes, rondas de crítica, métricas de calidad
+  y problemas que aparecieron.
+- [`docs/CODIGO.md`](docs/CODIGO.md): **cómo está hecho el código**. Motor, escenas, audio, render y una **guía de
+  cambios** (dónde está cada texto, el precio, los colores, los tiempos y la música).
+- [`docs/PLAN.md`](docs/PLAN.md): el contrato de producción (storyboard con tiempos, dirección de arte, lenguaje de
+  movimiento).
+- [`src/art/README.md`](src/art/README.md) y [`audio/README.md`](audio/README.md): el kit de ilustración y el audio
+  en detalle.
+
 ## Cómo funciona
 
 - **Un solo motor, dos plataformas** (`src/engine/`). Cada cuadro es una **función pura del tiempo** `t`.
@@ -98,6 +109,13 @@ npm run audio
 ```
 
 Regenera `public/audio/promo.wav` y lo verifica (−14 LUFS, true peak ≤ −1 dBTP y sincronía de los efectos).
+
+```bash
+node tools/fingerprint.mjs --out=huella.json
+```
+
+Guarda la huella de píxeles de la pieza. Después de un cambio, compará con `--compare=huella.json`: confirma que no
+se tocó la imagen.
 
 ### Versión vertical (9:16)
 
