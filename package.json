@@ -1,0 +1,28 @@
+{
+  "name": "promo-prime-cruceros",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Promo motion graphics 30 s 16:9 — Prime Cruceros (agencia de cruceros, Argentina)",
+  "scripts": {
+    "dev": "vite --port 5181 --strictPort",
+    "audio": "python audio/synth.py",
+    "still": "node tools/still.mjs",
+    "check": "node tools/check.mjs",
+    "render": "node tools/render.mjs",
+    "render:draft": "node tools/render.mjs --draft",
+    "energy": "node tools/energy.mjs"
+  },
+  "dependencies": {
+    "@fontsource/outfit": "^5.3.0"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.10",
+    "d3-geo": "^3.1.1",
+    "playwright": "^1.63.0",
+    "sharp": "^0.35.5",
+    "topojson-client": "^3.1.0",
+    "vite": "^6.4.3",
+    "world-atlas": "^2.0.2"
+  }
+}

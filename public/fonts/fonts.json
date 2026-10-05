@@ -1,0 +1,47 @@
+{
+ "_": "Fuentes de la pieza. Las leen tools/node-env.mjs (Node) y src/main.js (navegador). Archivo en public/fonts/.",
+ "fonts": [
+  {
+   "family": "Outfit",
+   "weight": 300,
+   "style": "normal",
+   "file": "Outfit-300.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 400,
+   "style": "normal",
+   "file": "Outfit-400.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 500,
+   "style": "normal",
+   "file": "Outfit-500.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 600,
+   "style": "normal",
+   "file": "Outfit-600.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 700,
+   "style": "normal",
+   "file": "Outfit-700.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 800,
+   "style": "normal",
+   "file": "Outfit-800.ttf"
+  },
+  {
+   "family": "Outfit",
+   "weight": 900,
+   "style": "normal",
+   "file": "Outfit-900.ttf"
+  }
+ ]
+}

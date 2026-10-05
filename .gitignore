@@ -1,0 +1,19 @@
+# dependencias
+node_modules/
+# renders, borradores y capturas de trabajo (se regeneran con tools/)
+out/
+shots/
+.shots-locks/
+# audio intermedio (se regenera con python audio/build.py)
+audio/stems/
+audio/review/out/
+audio/analysis/*.m4a
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+# varios
+ffmpeg2pass-*
+*.log
+.DS_Store
+Thumbs.db

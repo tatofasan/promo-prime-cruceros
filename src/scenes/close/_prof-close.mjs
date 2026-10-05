@@ -1,0 +1,24 @@
+// Perfil de las partes del cierre (en un proceso, sin las otras escenas).  node src/scenes/close/_prof-close.mjs 29
+import { boot } from '../../../tools/node-env.mjs';
+import { createCanvas } from '@napi-rs/canvas';
+await boot({ scenes: false });
+const t = Number(process.argv[2] ?? 29);
+const scene = (await import('../close.js')).default;
+await scene.init();
+const cv = createCanvas(1920, 1080), ctx = cv.getContext('2d');
+const flush = () => ctx.getImageData(0, 0, 1, 1);
+const time = (name, fn, n = 6) => { fn(); flush(); const a = performance.now(); for (let i = 0; i < n; i++) { fn(); flush(); } console.log(name.padEnd(28), ((performance.now() - a) / n).toFixed(1), 'ms'); };
+const bd = await import('./backdrop.js');
+const lk = await import('./lockup.js');
+const ct = await import('./cta.js');
+const cg = await import('./cta-glow.js');
+const { lockupGeo } = await import('./layout.js');
+const { handheld } = await import('../../engine/camera.js');
+const G = lockupGeo();
+const cam = () => handheld({ x: 0, y: 0, z: 1.02 }, t, { amp: 12, hz: 0.7, seed: 41 });
+time('escena completa', () => { ctx.save(); scene.draw(ctx, t); ctx.restore(); ctx.save(); scene.over(ctx, t); ctx.restore(); });
+time('fondo', () => bd.drawBackdrop(ctx, t, cam, { flare: 0.8, sunPulse: 0.3, kick: 0.5 }));
+time('fondo kick 0', () => bd.drawBackdrop(ctx, t, cam, { flare: 0.8, sunPulse: 0.3, kick: 0 }));
+time('lockup', () => lk.drawLockup(ctx, t, G));
+time('cta', () => ct.drawCta(ctx, t, G));
+time('cta glow', () => cg.drawCtaGlow(ctx, t, G));

@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: #0b0f14; color: #d8e2ec; font: 500 13px/1.3 Outfit, system-ui, sans-serif; }
+body { display: flex; flex-direction: column; }
+#wrap { flex: 1; display: grid; place-items: center; min-height: 0; padding: 12px; }
+#frame { position: relative; aspect-ratio: 16 / 9; width: min(100%, calc((100vh - 96px) * 16 / 9)); box-shadow: 0 10px 40px #0008; }
+#view { width: 100%; height: 100%; display: block; background: #04101F; }
+#safe { position: absolute; inset: 5% 5%; border: 1px dashed #ff00aa; pointer-events: none; display: none; }
+body.safe #safe { display: block; }
+#transport { display: flex; align-items: center; gap: 12px; padding: 8px 14px 12px; }
+#play { width: 38px; height: 38px; border-radius: 50%; border: 0; background: #FFB938; color: #061629; font-size: 16px; cursor: pointer; }
+#bar { position: relative; flex: 1; height: 38px; }
+#sections { position: absolute; inset: 0 0 auto 0; height: 14px; display: flex; border-radius: 4px; overflow: hidden; }
+#sections span { font-size: 10px; padding: 1px 4px; color: #061629; white-space: nowrap; overflow: hidden; }
+#cuemarks { position: absolute; left: 0; right: 0; top: 14px; height: 6px; }
+#cuemarks i { position: absolute; top: 0; width: 1px; height: 6px; background: #ffffff66; }
+#scrub { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; accent-color: #FFB938; }
+#clock { font-variant-numeric: tabular-nums; min-width: 120px; }
+#status { color: #FF9273; }

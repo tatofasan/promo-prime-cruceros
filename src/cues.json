@@ -1,0 +1,684 @@
+{
+ "bpm": 128,
+ "beat": 0.46875,
+ "bar": 1.875,
+ "duration": 30,
+ "fps": 60,
+ "size": [
+  1920,
+  1080
+ ],
+ "key": "La mayor (A), tropical house luminoso; ver docs/PLAN.md §7",
+ "version": 2,
+ "sections": [
+  {
+   "id": "hook",
+   "from": 0.0,
+   "to": 3.75,
+   "bars": [
+    0,
+    1
+   ],
+   "label": "Gancho"
+  },
+  {
+   "id": "reveal",
+   "from": 3.75,
+   "to": 5.625,
+   "bars": [
+    2,
+    2
+   ],
+   "label": "Ola"
+  },
+  {
+   "id": "experience",
+   "from": 5.625,
+   "to": 13.125,
+   "bars": [
+    3,
+    6
+   ],
+   "label": "Experiencia"
+  },
+  {
+   "id": "destinations",
+   "from": 13.125,
+   "to": 20.625,
+   "bars": [
+    7,
+    10
+   ],
+   "label": "Destinos"
+  },
+  {
+   "id": "value",
+   "from": 20.625,
+   "to": 26.25,
+   "bars": [
+    11,
+    13
+   ],
+   "label": "Valor"
+  },
+  {
+   "id": "close",
+   "from": 26.25,
+   "to": 30.0,
+   "bars": [
+    14,
+    15
+   ],
+   "label": "Cierre"
+  }
+ ],
+ "cues": [
+  {
+   "id": "hook.open",
+   "t": 0.0,
+   "bar": 0,
+   "beat": 1,
+   "sfx": "office_tick",
+   "note": "oficina gris: escritorio, monitor, calendario, reloj, ventana con ciudad gris. Arranca la música FILTRADA (apagada, como detrás de una pared) y el tic-tac"
+  },
+  {
+   "id": "hook.cal1",
+   "t": 0.46875,
+   "bar": 0,
+   "beat": 2,
+   "sfx": "page_flip",
+   "note": "hoja del calendario se arranca (LUNES → MARTES)"
+  },
+  {
+   "id": "hook.cal2",
+   "t": 0.9375,
+   "bar": 0,
+   "beat": 3,
+   "sfx": "page_flip",
+   "note": "hoja (MARTES → MIÉRCOLES)"
+  },
+  {
+   "id": "hook.cal3",
+   "t": 1.40625,
+   "bar": 0,
+   "beat": 4,
+   "sfx": "page_flip",
+   "note": "hoja (MIÉRCOLES → JUEVES); todo un poco más rápido"
+  },
+  {
+   "id": "hook.q1",
+   "t": 1.875,
+   "bar": 1,
+   "beat": 1,
+   "sfx": "type_hit",
+   "fx": {
+    "punch": 0.008
+   },
+   "note": "«¿Y SI» golpea"
+  },
+  {
+   "id": "hook.q2",
+   "t": 2.34375,
+   "bar": 1,
+   "beat": 2,
+   "sfx": "type_hit",
+   "fx": {
+    "punch": 0.008
+   },
+   "note": "«TUS PRÓXIMAS»"
+  },
+  {
+   "id": "hook.q3",
+   "t": 2.8125,
+   "bar": 1,
+   "beat": 3,
+   "sfx": "type_hit",
+   "fx": {
+    "punch": 0.01
+   },
+   "note": "«VACACIONES…»"
+  },
+  {
+   "id": "hook.leak",
+   "t": 3.046875,
+   "bar": 1,
+   "beat": 3.5,
+   "sfx": "drip",
+   "note": "el fondo de pantalla de playa del monitor empieza a filtrar agua (gotas, brillo)"
+  },
+  {
+   "id": "hook.surge",
+   "t": 3.28125,
+   "bar": 1,
+   "beat": 4,
+   "sfx": "wave_rise",
+   "dur": 0.46875,
+   "note": "ANTICIPACIÓN: la cámara retrocede, el agua desborda el monitor y se levanta la ola; riser al máximo"
+  },
+  {
+   "id": "hook.gap",
+   "t": 3.632812,
+   "bar": 1,
+   "beat": 4.75,
+   "sfx": "silence",
+   "dur": 0.117188,
+   "note": "semicorchea de SILENCIO antes del drop (solo cola de reverb)"
+  },
+  {
+   "id": "reveal.drop",
+   "t": 3.75,
+   "bar": 2,
+   "beat": 1,
+   "sfx": "drop_wave",
+   "fx": {
+    "flash": 0.12,
+    "flashColor": "#e9fbff",
+    "shake": 0.45,
+    "punch": 0.03
+   },
+   "note": "DROP: la OLA barre la oficina (wipe líquido) y revela mar abierto, sol y el crucero en el horizonte. «¿…FUERAN EN» golpea"
+  },
+  {
+   "id": "reveal.q5",
+   "t": 4.21875,
+   "bar": 2,
+   "beat": 2,
+   "sfx": "hit",
+   "fx": {
+    "punch": 0.015
+   },
+   "note": "«CRUCERO?» enorme"
+  },
+  {
+   "id": "reveal.horn",
+   "t": 4.6875,
+   "bar": 2,
+   "beat": 3,
+   "sfx": "ship_horn",
+   "note": "bocinazo del barco; destello de sol que barre (flare)"
+  },
+  {
+   "id": "reveal.push",
+   "t": 5.15625,
+   "bar": 2,
+   "beat": 4,
+   "sfx": "whoosh_in",
+   "dur": 0.46875,
+   "note": "la cámara se acelera hacia el barco y entra por un OJO DE BUEY"
+  },
+  {
+   "id": "exp.pool",
+   "t": 5.625,
+   "bar": 3,
+   "beat": 1,
+   "sfx": "splash_cut",
+   "fx": {
+    "flash": 0.15,
+    "flashColor": "#e9fbff",
+    "punch": 0.02
+   },
+   "note": "match cut: el aro del ojo de buey se abre (iris) y revela la PILETA con tobogán; «EXPERIENCIAS»"
+  },
+  {
+   "id": "exp.w2",
+   "t": 5.859375,
+   "bar": 3,
+   "beat": 1.5,
+   "sfx": "pop",
+   "note": "«ÚNICAS»"
+  },
+  {
+   "id": "exp.w3",
+   "t": 6.09375,
+   "bar": 3,
+   "beat": 2,
+   "sfx": "pop",
+   "note": "«EN CRUCERO»"
+  },
+  {
+   "id": "exp.slide",
+   "t": 6.5625,
+   "bar": 3,
+   "beat": 3,
+   "sfx": "slide_splash",
+   "fx": {
+    "shake": 0.12
+   },
+   "note": "alguien baja por el tobogán y cae al agua: SPLASH"
+  },
+  {
+   "id": "exp.ring",
+   "t": 7.265625,
+   "bar": 3,
+   "beat": 4.5,
+   "sfx": "whoosh_short",
+   "note": "anticipación: el salvavidas/flotador redondo se centra y crece"
+  },
+  {
+   "id": "exp.dinner",
+   "t": 7.5,
+   "bar": 4,
+   "beat": 1,
+   "sfx": "plate_cut",
+   "fx": {
+    "punch": 0.015
+   },
+   "note": "match cut: flotador → PLATO (vista cenital) en la cena gourmet"
+  },
+  {
+   "id": "exp.cloche",
+   "t": 7.96875,
+   "bar": 4,
+   "beat": 2,
+   "sfx": "cloche_shimmer",
+   "note": "se levanta la campana: plato gourmet con vapor y brillo"
+  },
+  {
+   "id": "exp.pour",
+   "t": 8.4375,
+   "bar": 4,
+   "beat": 3,
+   "sfx": "pour",
+   "note": "se sirve vino en la copa"
+  },
+  {
+   "id": "exp.clink",
+   "t": 8.90625,
+   "bar": 4,
+   "beat": 4,
+   "sfx": "glass_clink",
+   "note": "brindis: chin-chin con destello"
+  },
+  {
+   "id": "exp.casino",
+   "t": 9.375,
+   "bar": 5,
+   "beat": 1,
+   "sfx": "roulette",
+   "fx": {
+    "punch": 0.015
+   },
+   "note": "match cut: el plato gira → RULETA; fichas, cartas, luces"
+  },
+  {
+   "id": "exp.chips",
+   "t": 9.84375,
+   "bar": 5,
+   "beat": 2,
+   "sfx": "chips_stack",
+   "note": "fichas que se apilan / cartas que se abren en abanico"
+  },
+  {
+   "id": "exp.show",
+   "t": 10.3125,
+   "bar": 5,
+   "beat": 3,
+   "sfx": "whip_pan",
+   "fx": {
+    "shake": 0.12
+   },
+   "note": "paneo látigo al ESCENARIO: telón, reflectores que barren, bailarines en silueta"
+  },
+  {
+   "id": "exp.confetti",
+   "t": 10.78125,
+   "bar": 5,
+   "beat": 4,
+   "sfx": "confetti_pop",
+   "note": "lluvia de papelitos dorados"
+  },
+  {
+   "id": "exp.sunset",
+   "t": 11.25,
+   "bar": 6,
+   "beat": 1,
+   "sfx": "sun_swell",
+   "fx": {
+    "flash": 0.2,
+    "flashColor": "#ffd59a"
+   },
+   "note": "match cut: reflector → SOL; ATARDECER en cubierta (baranda, reposeras, pareja en silueta)"
+  },
+  {
+   "id": "exp.cheers",
+   "t": 12.1875,
+   "bar": 6,
+   "beat": 3,
+   "sfx": "glass_clink",
+   "note": "brindis con tragos (cócteles) a contraluz; destello"
+  },
+  {
+   "id": "exp.out",
+   "t": 12.65625,
+   "bar": 6,
+   "beat": 4,
+   "sfx": "whoosh_down",
+   "note": "el sol se encoge y baja: anticipación del pin"
+  },
+  {
+   "id": "map.in",
+   "t": 13.125,
+   "bar": 7,
+   "beat": 1,
+   "sfx": "pin_land",
+   "fx": {
+    "punch": 0.02
+   },
+   "note": "match: el sol se vuelve el PIN de marca sobre Buenos Aires; la cámara se aleja y aparece el mapa"
+  },
+  {
+   "id": "map.route",
+   "t": 13.59375,
+   "bar": 7,
+   "beat": 2,
+   "sfx": "route_start",
+   "note": "la línea de ruta arranca desde Buenos Aires (con un barquito en la punta)"
+  },
+  {
+   "id": "map.uy",
+   "t": 14.0625,
+   "bar": 7,
+   "beat": 3,
+   "sfx": "pin_pop",
+   "pitch": 0,
+   "note": "pin URUGUAY"
+  },
+  {
+   "id": "map.br",
+   "t": 14.53125,
+   "bar": 7,
+   "beat": 4,
+   "sfx": "pin_pop",
+   "pitch": 2,
+   "note": "pin BRASIL"
+  },
+  {
+   "id": "map.car",
+   "t": 15.0,
+   "bar": 8,
+   "beat": 1,
+   "sfx": "pin_pop",
+   "pitch": 4,
+   "note": "pin CARIBE"
+  },
+  {
+   "id": "map.trans",
+   "t": 15.46875,
+   "bar": 8,
+   "beat": 2,
+   "sfx": "route_whoosh",
+   "note": "la ruta cruza el Atlántico en arco: TRANSATLÁNTICOS"
+  },
+  {
+   "id": "map.eu",
+   "t": 15.9375,
+   "bar": 8,
+   "beat": 3,
+   "sfx": "pin_pop",
+   "pitch": 5,
+   "note": "pin EUROPA"
+  },
+  {
+   "id": "map.dxb",
+   "t": 16.40625,
+   "bar": 8,
+   "beat": 4,
+   "sfx": "pin_pop",
+   "pitch": 7,
+   "note": "pin DUBÁI"
+  },
+  {
+   "id": "map.whip",
+   "t": 16.875,
+   "bar": 9,
+   "beat": 1,
+   "sfx": "whip_pan",
+   "note": "paneo látigo hacia el sur"
+  },
+  {
+   "id": "map.ant",
+   "t": 17.34375,
+   "bar": 9,
+   "beat": 2,
+   "sfx": "pin_pop",
+   "pitch": 9,
+   "note": "pin ANTÁRTIDA (destello helado)"
+  },
+  {
+   "id": "map.all",
+   "t": 17.8125,
+   "bar": 9,
+   "beat": 3,
+   "sfx": "network_glow",
+   "note": "la cámara se aleja: toda la red de rutas brilla y los pines laten"
+  },
+  {
+   "id": "map.hold",
+   "t": 18.28125,
+   "bar": 9,
+   "beat": 4,
+   "sfx": "whoosh_short",
+   "note": "anticipación a las navieras"
+  },
+  {
+   "id": "lines.in",
+   "t": 18.75,
+   "bar": 10,
+   "beat": 1,
+   "sfx": "chip_pop",
+   "pitch": 0,
+   "fx": {
+    "punch": 0.01
+   },
+   "note": "«LAS MEJORES NAVIERAS» + chip MSC"
+  },
+  {
+   "id": "lines.c2",
+   "t": 18.984375,
+   "bar": 10,
+   "beat": 1.5,
+   "sfx": "chip_pop",
+   "pitch": 2,
+   "note": "chip Costa"
+  },
+  {
+   "id": "lines.c3",
+   "t": 19.21875,
+   "bar": 10,
+   "beat": 2,
+   "sfx": "chip_pop",
+   "pitch": 4,
+   "note": "chip Royal Caribbean"
+  },
+  {
+   "id": "lines.c4",
+   "t": 19.453125,
+   "bar": 10,
+   "beat": 2.5,
+   "sfx": "chip_pop",
+   "pitch": 5,
+   "note": "chip Norwegian"
+  },
+  {
+   "id": "lines.c5",
+   "t": 19.6875,
+   "bar": 10,
+   "beat": 3,
+   "sfx": "chip_pop",
+   "pitch": 7,
+   "note": "chip Celebrity"
+  },
+  {
+   "id": "lines.c6",
+   "t": 19.921875,
+   "bar": 10,
+   "beat": 3.5,
+   "sfx": "chip_pop",
+   "pitch": 9,
+   "note": "chip Princess"
+  },
+  {
+   "id": "lines.out",
+   "t": 20.390625,
+   "bar": 10,
+   "beat": 4.5,
+   "sfx": "whoosh_short",
+   "note": "salida de las navieras"
+  },
+  {
+   "id": "val.in",
+   "t": 20.625,
+   "bar": 11,
+   "beat": 1,
+   "sfx": "suitcase_drop",
+   "fx": {
+    "punch": 0.015
+   },
+   "note": "cae una VALIJA (squash & stretch); «HAY UN CRUCERO PARA CADA FORMA DE VIAJAR»"
+  },
+  {
+   "id": "val.s1",
+   "t": 21.09375,
+   "bar": 11,
+   "beat": 2,
+   "sfx": "sticker_slap",
+   "note": "calco «EN PAREJA» se pega en la valija"
+  },
+  {
+   "id": "val.s2",
+   "t": 21.5625,
+   "bar": 11,
+   "beat": 3,
+   "sfx": "sticker_slap",
+   "note": "calco «EN FAMILIA»"
+  },
+  {
+   "id": "val.s3",
+   "t": 21.796875,
+   "bar": 11,
+   "beat": 3.5,
+   "sfx": "sticker_slap",
+   "note": "calco «CON AMIGOS» (v2: una corchea antes, para que se lea ≥0,6 s)"
+  },
+  {
+   "id": "val.pass",
+   "t": 22.5,
+   "bar": 12,
+   "beat": 1,
+   "sfx": "ticket_whoosh",
+   "fx": {
+    "punch": 0.01
+   },
+   "note": "entra la TARJETA DE EMBARQUE; «MINICRUCEROS»"
+  },
+  {
+   "id": "val.price",
+   "t": 23.4375,
+   "bar": 12,
+   "beat": 3,
+   "sfx": "stamp",
+   "fx": {
+    "shake": 0.15,
+    "punch": 0.015
+   },
+   "note": "sello «DESDE USD 355» (el contador rueda desde el beat anterior)"
+  },
+  {
+   "id": "val.tear",
+   "t": 23.90625,
+   "bar": 12,
+   "beat": 4,
+   "sfx": "ticket_tear",
+   "note": "se arranca el talón troquelado"
+  },
+  {
+   "id": "val.pro",
+   "t": 24.375,
+   "bar": 13,
+   "beat": 1,
+   "sfx": "hit_soft",
+   "fx": {
+    "punch": 0.01
+   },
+   "note": "«ASESORAMIENTO DE ESPECIALISTAS EN CRUCEROS»"
+  },
+  {
+   "id": "val.b1",
+   "t": 24.84375,
+   "bar": 13,
+   "beat": 2,
+   "sfx": "bubble_pop",
+   "note": "globo de chat 1"
+  },
+  {
+   "id": "val.b2",
+   "t": 25.3125,
+   "bar": 13,
+   "beat": 3,
+   "sfx": "bubble_pop",
+   "note": "globo de chat 2 / check"
+  },
+  {
+   "id": "val.surge",
+   "t": 25.78125,
+   "bar": 13,
+   "beat": 4,
+   "sfx": "wave_rise",
+   "dur": 0.46875,
+   "note": "ANTICIPACIÓN de la segunda ola (riser)"
+  },
+  {
+   "id": "close.in",
+   "t": 26.25,
+   "bar": 14,
+   "beat": 1,
+   "sfx": "wave_logo",
+   "fx": {
+    "flash": 0.1,
+    "flashColor": "#e9fbff",
+    "punch": 0.02
+   },
+   "note": "segunda OLA barre todo; cae el PIN de marca con rebote y nace el logo"
+  },
+  {
+   "id": "close.word",
+   "t": 26.71875,
+   "bar": 14,
+   "beat": 2,
+   "sfx": "shimmer",
+   "note": "el logotipo «primecruceros» termina de armarse; barrido de luz"
+  },
+  {
+   "id": "close.url",
+   "t": 27.1875,
+   "bar": 14,
+   "beat": 3,
+   "sfx": "type_tick",
+   "note": "primecruceros.com.ar"
+  },
+  {
+   "id": "close.cta",
+   "t": 27.65625,
+   "bar": 14,
+   "beat": 4,
+   "sfx": "button_pop",
+   "fx": {
+    "punch": 0.01
+   },
+   "note": "botón «CONSULTANOS POR WHATSAPP →» con ícono"
+  },
+  {
+   "id": "close.final",
+   "t": 28.125,
+   "bar": 15,
+   "beat": 1,
+   "sfx": "final_hit",
+   "fx": {
+    "flash": 0.18,
+    "flashColor": "#ffe2a8",
+    "punch": 0.02
+   },
+   "note": "golpe final: el botón late, destellos; el cuadro queda VIVO hasta 30,0"
+  }
+ ]
+}
